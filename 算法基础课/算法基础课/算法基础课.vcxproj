@@ -139,6 +139,7 @@
     <ClCompile Include="4.数学知识.cpp" />
     <ClCompile Include="4789.前缀和序列.cpp" />
     <ClCompile Include="5.动态规划.cpp" />
+    <ClCompile Include="6.贪心.cpp" />
     <ClCompile Include="99.激光炸弹.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

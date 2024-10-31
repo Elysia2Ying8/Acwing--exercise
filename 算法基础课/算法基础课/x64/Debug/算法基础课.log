@@ -1,2 +1,3 @@
-﻿  4.数学知识.cpp
-  算法基础课.vcxproj -> D:\Gitee代码库\acwing-exercise\算法基础课\x64\Debug\算法基础课.exe
+﻿  6.贪心.cpp
+D:\Github代码库\Acwing--exercise\算法基础课\算法基础课\6.贪心.cpp(12,21): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  算法基础课.vcxproj -> D:\Github代码库\Acwing--exercise\算法基础课\x64\Debug\算法基础课.exe

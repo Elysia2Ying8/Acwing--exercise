@@ -54,5 +54,8 @@
     <ClCompile Include="4.数学知识.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="6.贪心.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
