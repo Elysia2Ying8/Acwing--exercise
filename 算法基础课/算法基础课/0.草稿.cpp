@@ -72,3 +72,58 @@
 //    }
 //    return 0;
 //}
+
+//#include<bits/stdc++.h>
+//using namespace std;
+//const int mxn = 1e5 + 5;
+//typedef pair<int, int> PII;
+//int h[mxn], e[mxn], ne[mxn], w[mxn], idx;
+//int n, m;
+//int d[mxn];
+//bool st[mxn];
+//void add(int a, int b, int c) {
+//	e[idx] = b;
+//	w[idx] = c;
+//	ne[idx] = h[a];
+//	h[a] = idx++;
+//}
+//void dijkstra() {
+//	memset(d, 0x3f, sizeof d);
+//	d[1] = 0;
+//	priority_queue<PII, vector<PII>, greater<PII>> heap;
+//	queue<int> q;
+//	heap.push({ 0,1 });
+//	while (heap.size()) {
+//		auto t = heap.top();
+//		heap.pop();
+//		int distance = t.first, ver = t.second;
+//		if (st[ver])continue;
+//		q.push(ver);
+//		st[ver] = true;
+//		for (int i = h[ver]; i != -1; i=ne[i]) {
+//			int j = e[i];
+//			if (d[j] > distance + w[i]) {
+//				d[j] = distance + w[i];
+//				heap.push({ d[j],j });
+//			}
+//		}
+//	}
+//	while (q.size()) {
+//		cout << q.front() << ' ' << d[q.front()] << '\n';
+//		q.pop();
+//	}
+//}
+//signed main()
+//{
+//	ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+//	//7,11
+//	memset(h, -1, sizeof h);
+//	cin >> n >> m;
+//	for (int i = 1; i <= m; ++i) {
+//		int a, b, c;
+//		cin >> a >> b >> c;
+//		add(a, b, c);
+//	}
+//	dijkstra();
+//	return 0;
+//}

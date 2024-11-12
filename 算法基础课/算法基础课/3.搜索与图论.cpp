@@ -169,8 +169,111 @@
 
 
 
+//拓扑排序
 
 
+
+//848. 有向图的拓扑序列
+//#include<bits/stdc++.h>
+//using namespace std;
+//const int mxn = 1e5 + 5;
+////p为入度
+//int h[mxn], e[mxn], ne[mxn], p[mxn], idx;
+////是否已入队
+//bool st[mxn];
+//int n, m;
+//queue<int> q;
+//void add(int a, int b) {
+//	e[idx] = b;
+//	ne[idx] = h[a];
+//	p[b]++;//入度++
+//	h[a] = idx++;
+//}
+//void check() {
+//	for (int k = 1; k <= n; ++k) {//最坏循环n次
+//		for (int i = 1; i <= n; ++i) {//遍历n个点
+//			if (st[i] == false && p[i] == 0) {
+//				q.push(i);
+//				st[i] = true;
+//				for (int j = h[i]; j != -1; j = ne[j]) {
+//					p[e[j]]--;//入度--
+//				}
+//			}
+//		}
+//		if (q.size() == n)break;//已找到答案可退出
+//	}
+//}
+//signed main()
+//{
+//	ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+//	cin >> n >> m;
+//	memset(h, -1, sizeof h);
+//	for (int i = 1; i <= m; ++i) {
+//		int a, b;
+//		cin >> a >> b;
+//		add(a, b);
+//	}
+//	check();
+//	if (q.size() < n)cout << -1 << '\n';
+//	else {
+//		while (q.size()) {
+//			cout << q.front() << (q.size() == 1 ? '\n' : ' ');
+//			q.pop();
+//		}
+//	}
+//	return 0;
+//}
+
+//#include<bits/stdc++.h>
+//using namespace std;
+//const int mxn = 1e5 + 5;
+////p为入度
+//int h[mxn], e[mxn], ne[mxn], p[mxn], idx;
+//int n, m;
+//queue<int> q, res;
+//void add(int a, int b) {
+//	e[idx] = b;
+//	ne[idx] = h[a];
+//	p[b]++;//入度++
+//	h[a] = idx++;
+//}
+//void topsort() {
+//	int ans = 0;
+//	for (int k = 1; k <= n; ++k) {
+//		if (p[k] == 0)q.push(k);
+//	}
+//	while (q.size()) {
+//		int a = q.front();
+//		++ans;
+//		res.push(a);
+//		q.pop();
+//		for (int i = h[a]; i != -1; i = ne[i]) {
+//			int b = e[i];
+//			p[b]--;
+//			if (p[b] == 0)q.push(b);
+//		}
+//	}
+//	if (ans < n)cout << -1 << '\n';
+//	else {
+//		while (res.size()) {
+//			cout << res.front() << (res.size() == 1 ? '\n' : ' ');
+//			res.pop();
+//		}
+//	}
+//}
+//signed main()
+//{
+//	ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+//	cin >> n >> m;
+//	memset(h, -1, sizeof h);
+//	for (int i = 1; i <= m; ++i) {
+//		int a, b;
+//		cin >> a >> b;
+//		add(a, b);
+//	}
+//	topsort();
+//	return 0;
+//}
 
 
 
